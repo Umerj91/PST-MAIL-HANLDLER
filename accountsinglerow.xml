@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText"
+    android:id="@+id/discarview"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+
+
+    android:layout_height="wrap_content" android:layout_width="match_parent"
+
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp">
+
+
+        <ImageButton
+            android:id="@+id/flowmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_more_vert_24" />
+
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_account">
+
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/img1"
+            android:gravity="center_vertical"
+            android:text="Dummy Text"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/t1"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/img1"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="Dummy Text 2"
+            android:textColor="#000"
+            android:textSize="10sp">
+
+        </TextView>
+
+        <!--        <CheckBox-->
+        <!--            android:id="@+id/chkbox"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="200dp"-->
+        <!--            android:layout_toRightOf="@+id/t2">-->
+
+        <!--        </CheckBox>-->
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

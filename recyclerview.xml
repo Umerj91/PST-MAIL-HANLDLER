@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal">
+    <ImageView
+
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:id="@+id/icon_view"
+        android:src="@drawable/ic_folder"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/imageicon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/icon_view"
+        android:padding="5dp"
+        android:text="Documents Folder">
+
+    </TextView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/icon_view"
+        android:layout_marginTop="2dp"
+        android:background="@color/cardview_shadow_start_color">
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

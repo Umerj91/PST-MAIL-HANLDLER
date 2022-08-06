@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MailView">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+
+        android:background="@color/purple_500"
+
+
+        tools:ignore="ExtraText,MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_mail">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/aleo"
+            android:maxWidth="80dp"
+            android:maxLines="3"
+            android:text="This is Mail Header"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="119dp"
+            android:background="@drawable/borderstyle"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:id="@+id/txtfrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="From"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtTo"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtfrom"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:text="To"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtdate"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTo"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:text="Date"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/fromdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/txtfrom"
+
+                android:text="abc@gmail.com"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/todetail"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fromdetail"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/txtTo"
+                android:maxLines="1"
+                android:text="Zohaib61@gmail.com"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/datedetail"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/todetail"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/txtdate"
+                android:text="April 29,2021"
+                android:textSize="20sp">
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtbody"
+        android:layout_width="383dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="textMultiLine"
+        android:text="
+Lorem Ipsum is simply dummy text of the printing and
+typesetting industry. Lorem Ipsum has been the industry's
+standard dummy text ever since the 1500s, when an unknown
+printer took a galley of type and scrambled it to make a
+type specimen book. It has survived not only five centuries,
+but also the leap into electronic typesetting,
+remaining essentially unchanged.
+
+It was popularised in the 1960s with the release of Letraset
+sheets containing Lorem Ipsum passages, and more recently
+with desktop publishing software like Aldus PageMaker
+including versions of Lorem Ipsum.
+"
+
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints,TextViewEdits">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btnreply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custombutton"
+        android:drawableLeft="@drawable/ic_reply"
+        android:paddingLeft="1dp"
+        android:text="Reply"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnreplyall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custombutton"
+        android:drawableLeft="@drawable/ic_replyall"
+        android:paddingLeft="1dp"
+        android:text="Reply All"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnforward"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnreply" />
+
+    <Button
+        android:id="@+id/btnforward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custombutton"
+        android:drawableLeft="@drawable/ic_forward"
+        android:paddingLeft="1dp"
+        android:text="Forward"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/btnreplyall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnreplyall"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

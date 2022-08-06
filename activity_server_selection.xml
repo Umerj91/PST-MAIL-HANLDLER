@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ServerSelection">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btngmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:title="Select Server" />
+
+    <Button
+        android:id="@+id/btnYahoo"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="52dp"
+        android:text="Yahoo"
+        android:textSize="30sp"
+        android:drawableLeft="@drawable/ic_yahoo"
+        android:background="@drawable/custombutton"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btngmail"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnoutlook"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/custombutton"
+        android:text="Outlook"
+        android:drawableLeft="@drawable/ic_outlook"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnYahoo" />
+
+    <Button
+        android:id="@+id/btnothers"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        android:text="Others"
+        android:drawableLeft="@drawable/ic_tool"
+        android:textSize="30sp"
+        android:textAllCaps="false"
+        android:background="@drawable/custombutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnoutlook"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btngmail"
+
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="116dp"
+        android:drawableLeft="@drawable/ic_gmail"
+        android:text="Gmail"
+
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:background="@drawable/custombutton"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
